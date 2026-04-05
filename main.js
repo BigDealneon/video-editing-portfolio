@@ -28,6 +28,7 @@ document.querySelectorAll('.video-card').forEach(card => {
     document.body.style.overflow = 'hidden';
     setTimeout(() => {
       videoLink.click();
+      closeVideoModal();
     }, 500);
   });
 });
