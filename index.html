@@ -34,24 +34,22 @@
       <p class="section-label">Работы</p>
       <h2 class="section-title">Portfolio</h2>
     </div>
-  <!-- ── Вот сюда будешь добавлять проекты── -->
     <div class="portfolio-grid reveal">
-          <!-- ── вот эту выделенную часть скопируешь, вставишь, от сюда── -->
-      <button class="video-card" data-video-id="FptUdeMdGXQ" type="button">
-        <div class="card-thumb" style="background-image: url('https://img.youtube.com/vi/FptUdeMdGXQ/sddefault.jpg') ; background-size: cover; background-position: center;"></div>   <!-- ──в скопированной тобой части, ссылку на нужную тебе меняешь── -->
-        <div class="card-overlay"></div>
-        <div class="card-play">
-          <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></svg>
-        </div>
-      </button>
-  <!-- ── и до сюда, просто эту часть сразу ниже── -->
-      <button class="video-card" data-video-id="U2881qFs8V0" type="button">
-        <div class="card-thumb" style="background-image: url('https://img.youtube.com/vi/U2881qFs8V0/sddefault.jpg'); background-size: cover; background-position: center;"></div>
-        <div class="card-overlay"></div>
-        <div class="card-play">
-          <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></svg>
-        </div>
-      </button>
+      <div class="video-card" style="position: relative;">
+      <iframe 
+  width="100%" 
+  height="100%" 
+  src="https://www.youtube.com/embed/FptUdeMdGXQ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      </div>
+      <div class="video-card" style="position: relative;">
+        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/U2881qFs8V0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; inset: 0; border-radius: 10px; border: none;"></iframe>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -106,6 +104,20 @@
 
     <a href="https://www.google.com/url?sa=E&source=gmail&q=https://t.me/bigshotmontage" class="footer-website">© website was made by BIGDEAL Production</a>
   </footer>
+
+  <!-- ── VIDEO MODAL ── -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-player"></div>
+    </div>
+  </div>
 
   <script src="./main.js"></script>
 </body>

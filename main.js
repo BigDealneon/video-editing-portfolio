@@ -11,10 +11,7 @@ const io = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => io.observe(el));
 
+// Анимация для видео карточек
 document.querySelectorAll('.video-card').forEach((card, i) => {
   card.style.transitionDelay = `${i * 0.08}s`;
-  card.addEventListener('click', () => {
-    const videoId = card.getAttribute('data-video-id');
-    window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
-  });
 });
