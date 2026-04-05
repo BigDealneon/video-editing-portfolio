@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oskanov Magomed — Video Production</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <p class="hero-sub">video production</p>
+    <h1 class="hero-name">Oskanov Magomed<span class="hero-dot"></span></h1>
+    <p class="hero-tagline">монтаж — который <em>продаёт</em></p>
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn btn-ghost">Портфолио</a>
+      <a href="#contact" class="btn btn-primary">
+        Связаться
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <section id="portfolio">
+    <div class="portfolio-header reveal">
+      <p class="section-label">Работы</p>
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+  <!-- ── Вот сюда будешь добавлять проекты── -->
+    <div class="portfolio-grid reveal">
+          <!-- ── вот эту выделенную часть скопируешь, вставишь, от сюда── -->
+      <button class="video-card" data-video-id="FptUdeMdGXQ" type="button">
+        <div class="card-thumb" style="background-image: url('https://img.youtube.com/vi/FptUdeMdGXQ/sddefault.jpg') ; background-size: cover; background-position: center;"></div>   <!-- ──в скопированной тобой части, ссылку на нужную тебе меняешь── -->
+        <div class="card-overlay"></div>
+        <div class="card-play">
+          <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></svg>
+        </div>
+      </button>
+  <!-- ── и до сюда, просто эту часть сразу ниже── -->
+      <button class="video-card" data-video-id="U2881qFs8V0" type="button">
+        <div class="card-thumb" style="background-image: url('https://img.youtube.com/vi/U2881qFs8V0/sddefault.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="card-overlay"></div>
+        <div class="card-play">
+          <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></svg>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ── VIDEO MODAL ── -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="closeModal" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-message">
+        <p>Открываю видео на YouTube...</p>
+        <a id="videoLink" href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Открыть видео</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="about-wrap reveal">
+      <div>
+        <div class=""><img class="about-photo" src="../magomed portfolio/images/Gemini_Generated_Image_2txldw2txldw2txl.png" alt=""></div>
+      </div>
+      <div>
+        <h3 class="about-name">Oskanov Magomed</h3>
+        <p class="about-text">
+          Привет, я Магамед — видеомонтажёр, специализируюсь на создании стратегического контента для экспертов и предпринимателей. Сотрудничал с такими брендами, как <strong>CyberYuzh</strong>, <strong>Franklin</strong> и <strong>Beriy Palace</strong>. Мои работы дважды входили в топ-5% по просмотрам и удержанию на каналах моих клиентов, что подтверждает эффективность моего подхода.
+        </p>
+        <p class="about-text">
+           Я фокусируюсь на решении ваших бизнес-задач и создании видео, которые вызывают доверие аудитории и работают на продажи, превращая контент в полноценный маркетинговый инструмент.
+        </p>
+        <a href="#contact" class="btn btn-primary">
+          Связаться
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CONTACT ── -->
+  <div class="contact-strip" id="contact">
+    <div class="reveal">
+      <p class="section-label">Контакт</p>
+      <h2 class="section-title">Начнём?</h2>
+      <p class="contact-sub">Обсудим ваш проект и создадим контент, который продаёт</p>
+      <a href="https://t.me/MagomedOskanovCC" class="btn btn-primary" style="font-size:15px; padding:16px 40px;">
+        Написать в Telegram
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    © 2026 Oskanov Magomed · Video Production
+
+    <a href="https://www.google.com/url?sa=E&source=gmail&q=https://t.me/bigshotmontage" class="footer-website">© website was made by BIGDEAL Production</a>
+  </footer>
+
+  <script src="../magomed portfolio/main.js"></script>
+</body>
+</html>
