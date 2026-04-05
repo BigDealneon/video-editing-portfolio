@@ -23,13 +23,7 @@ const modalOverlay = document.getElementById('modalOverlay');
 document.querySelectorAll('.video-card').forEach(card => {
   card.addEventListener('click', () => {
     const videoId = card.getAttribute('data-video-id');
-    videoLink.href = `https://www.youtube.com/watch?v=${videoId}`;
-    videoModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      videoLink.click();
-      closeVideoModal();
-    }, 500);
+    window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
   });
 });
 
